@@ -5,13 +5,13 @@ import * as path from 'path';
 
 @Injectable()
 export class UserService {
-    test(): IUser[] {
-        return [];
-    }
+  test(): IUser[] {
+    return [];
+  }
 
-    findAll(): IUser[] {
-        const filePath = path.join(process.cwd(), 'data', 'users.json');
-        const fileContent = fs.readFileSync(filePath, 'utf-8');
-        return JSON.parse(fileContent) as IUser[];
-    }
+  findAll(): IUser[] {
+    const filePath = path.join(process.cwd(), 'data', 'users.json');
+    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(fileContent) as IUser[];
+  }
 }
