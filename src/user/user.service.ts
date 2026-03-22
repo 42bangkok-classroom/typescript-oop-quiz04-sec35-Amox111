@@ -1,11 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import { IUser } from './user.interface';
-import * as path from 'path';
 import * as fs from 'fs';
+import * as path from 'path';
 
 @Injectable()
 export class UserService {
-    test(){
+    test(): IUser[] {
         return [];
     }
 
